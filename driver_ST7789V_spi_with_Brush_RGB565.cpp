@@ -103,12 +103,10 @@ void ST7789V_spi_with_Brush_RGB565::enable(type_t type)
 		mSpi->setSpecification(*mDataSpec);
 	else
 		mSpi->setSpecification(*mRegSpec);
-	mSpi->enable(true);
 }
 
 void ST7789V_spi_with_Brush_RGB565::disable(void)
 {
-	mSpi->enable(false);
 	mSpi->unlock();
 }
 

@@ -187,16 +187,26 @@ void ST7789V_with_Brush_RGB565::drawBitmapBase(Position pos, const bitmap_t bitm
 	
 		for(int32_t i = 0; i < count; i++)
 		{
+			enable(TYPE_REG);
 			setWindow(area);
+			sendReg(MEMORY_WRITE);
+			disable();
+			enable(TYPE_DATA);
 			sendData(&fb[offset], width);
+			disable();
 			area.addY(1);
 			offset += bitmap.width;
 		}
 	}
 	else 
 	{
+		enable(TYPE_REG);
 		setWindow(area);
+		sendReg(MEMORY_WRITE);
+		disable();
+		enable(TYPE_DATA);
 		sendData(fb, bitmap.width * bitmap.height);
+		disable();
 	}
 }
 
