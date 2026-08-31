@@ -40,17 +40,17 @@ public :
 
 	void setConfig(const config_t &config);
 
-	virtual void sendReg(cmd_t cmd);	// pure
+	void sendReg(cmd_t cmd) override;
 
-	virtual void sendReg(cmd_t cmd, uint8_t data);	// pure
+	void sendReg(cmd_t cmd, uint8_t data) override;
 	
-	virtual void sendReg(cmd_t cmd, uint8_t *data, uint32_t count);	// pure
+	void sendReg(cmd_t cmd, uint8_t *data, uint32_t count) override;
 
-	virtual void sendData(uint16_t *data, uint32_t count);	// pure
+	void sendData(uint16_t *data, uint32_t count) override;
 
-	void enable(type_t type);
+	void enable(type_t type) override;
 
-	void disable(void);
+	void disable(void) override;
 
 	void read(uint8_t cmd, uint8_t &des);
 };

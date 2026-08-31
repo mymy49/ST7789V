@@ -15,15 +15,15 @@
 static const Spi::specification_t gRegSpec =
 {
 	Spi::CLOCK_MODE_MODE0,	//uint8_t mode;
-	15000000,			//uint32_t maxFreq;
-	Spi::BIT_BIT8		//uint8_t bit;
+	15000000,				//uint32_t maxFreq;
+	Spi::BIT_BIT8			//uint8_t bit;
 };
 
 static const Spi::specification_t gDataSpec =
 {
 	Spi::CLOCK_MODE_MODE0,	//uint8_t mode;
-	15000000,			//uint32_t maxFreq;
-	Spi::BIT_BIT16		//uint8_t bit;
+	15000000,				//uint32_t maxFreq;
+	Spi::BIT_BIT16			//uint8_t bit;
 };
 
 ST7789V_spi_with_Brush_RGB565::ST7789V_spi_with_Brush_RGB565(void)

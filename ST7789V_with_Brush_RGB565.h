@@ -8,7 +8,7 @@
 #ifndef YSS_MOD_TFT_LCD_DRIVER_ST7796__H_
 #define YSS_MOD_TFT_LCD_DRIVER_ST7796__H_
 
-#include "BrushTftLcdRgb565LE.h"
+#include "TurtleShip/BrushTftLcdRgb565LE.h"
 #include "ST7789V.h"
 
 class ST7789V_with_Brush_RGB565 : public ST7789V, public BrushTftLcdRgb565LE
@@ -26,7 +26,7 @@ public:
 	void fillRectBase(int16_t x, int16_t y, uint16_t width, uint16_t height, Color color) override;
 
 protected :
-	void fillDotArray(uint32_t offset, uint32_t count, Color color);
+	void fillDotArray(uint32_t offset, uint32_t count, Color color) override;
 
 	void drawBitmapBase(Size canvasSize, Area targetCanvasArea, Position bitmapPos, const bitmap_t bitmap) override;
 
