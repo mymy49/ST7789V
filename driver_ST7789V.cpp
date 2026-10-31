@@ -6,7 +6,7 @@
  */
 
 #include "ST7789V.h"
-#include "TurtleShip/Area.h"
+#include <yss/Area.h>
 
 ST7789V::ST7789V(void)
 {
