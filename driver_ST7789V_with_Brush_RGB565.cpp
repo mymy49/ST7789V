@@ -30,7 +30,7 @@ void ST7789V_with_Brush_RGB565::drawDot(int16_t x, int16_t y)
 	disable();
 
 	enable(TYPE_DATA);
-	sendData(&code, 2);
+	sendData(&code, 1);
 	disable();
 }
 
