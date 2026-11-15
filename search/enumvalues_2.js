@@ -1,0 +1,11 @@
+var searchData=
+[
+  ['disp_5finversion_5foff_0',['DISP_INVERSION_OFF',['../classST7789V.html#a22940be0c423b5840f41e8b5835b3389af2aee7ad9266441f68d613f6944941b1',1,'ST7789V']]],
+  ['disp_5finversion_5fon_1',['DISP_INVERSION_ON',['../classST7789V.html#a22940be0c423b5840f41e8b5835b3389a33cd8f8a7c5536474d5ee134c1e55a0b',1,'ST7789V']]],
+  ['display_5fctrl_2',['DISPLAY_CTRL',['../classST7789V.html#a22940be0c423b5840f41e8b5835b3389a2078ae89654139899f6e810493f450b7',1,'ST7789V']]],
+  ['display_5finversion_5fcon_3',['DISPLAY_INVERSION_CON',['../classST7789V.html#a22940be0c423b5840f41e8b5835b3389af396625547498af661f5c512e938ff87',1,'ST7789V']]],
+  ['display_5foff_4',['DISPLAY_OFF',['../classST7789V.html#a22940be0c423b5840f41e8b5835b3389a78237a81fca10f1f5fa031af0f13acb7',1,'ST7789V']]],
+  ['dispon_5',['DISPON',['../classST7789V.html#a22940be0c423b5840f41e8b5835b3389ade6324d792a64378121c36d8b207880f',1,'ST7789V']]],
+  ['dtca_6',['DTCA',['../classST7789V.html#a22940be0c423b5840f41e8b5835b3389ac552f4fc7f9311a49e51c75f142643bb',1,'ST7789V']]],
+  ['dtcb_7',['DTCB',['../classST7789V.html#a22940be0c423b5840f41e8b5835b3389a69e15103afbc8ef0094217ac1128b40f',1,'ST7789V']]]
+];

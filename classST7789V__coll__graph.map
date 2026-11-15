@@ -1,0 +1,5 @@
+<map id="ST7789V" name="ST7789V">
+<area shape="rect" id="Node000001" title="Base hardware driver class for the Sitronix ST7789V TFT LCD controller." alt="" coords="16,81,95,109"/>
+<area shape="rect" id="Node000002" href="/home/runner/work/ST7789V/ST7789V/TurtleShip.tag$classTftLcdDriver.html" title=" " alt="" coords="5,5,106,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="57,47,58,81,53,80,54,51"/>
+</map>

@@ -1,0 +1,5 @@
+var searchData=
+[
+  ['enable_0',['enable',['../classST7789V.html#af714b5f55554106ed7725540aec2a15e',1,'ST7789V::enable()'],['../classST7789V__spi__with__Brush__RGB565.html#a4cd77e753231f16cadd64ae61067aab5',1,'ST7789V_spi_with_Brush_RGB565::enable()']]],
+  ['eventsizechanged_1',['eventSizeChanged',['https://mymy49.github.io/TurtleShip/classObject.html#aa0145313e46496f89bda6a3197aa02ad',1,'Object']]]
+];

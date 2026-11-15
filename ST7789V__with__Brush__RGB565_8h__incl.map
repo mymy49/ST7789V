@@ -1,0 +1,9 @@
+<map id="ST7789V_with_Brush_RGB565.h" name="ST7789V_with_Brush_RGB565.h">
+<area shape="rect" id="Node000001" title="Direct 2D drawing bridge connecting the ST7789V LCD controller to TurtleShip&#39;s Little&#45;Endian RGB565 B..." alt="" coords="142,5,299,50"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,98,247,126"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="198,49,154,90,151,85,194,52"/>
+<area shape="rect" id="Node000003" href="$ST7789V_8h.html" title="Base controller driver for the Sitronix ST7789V 240x320 single&#45;chip TFT LCD controller." alt="" coords="271,98,360,126"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="246,48,291,87,286,88,245,53"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="226,174,405,201"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="317,124,318,160,313,156,313,128"/>
+</map>

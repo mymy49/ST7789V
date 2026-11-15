@@ -1,0 +1,9 @@
+<map id="ST7789V" name="ST7789V">
+<area shape="rect" id="Node000001" title="Base hardware driver class for the Sitronix ST7789V TFT LCD controller." alt="" coords="58,81,136,109"/>
+<area shape="rect" id="Node000003" href="$classST7789V__with__Brush__RGB565.html" title="Hardware&#45;accelerated 2D drawing canvas bridge for ST7789V displays in Little&#45;Endian RGB565 format." alt="" coords="18,157,176,201"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="98,122,100,157,94,155,96,127"/>
+<area shape="rect" id="Node000002" href="/home/runner/work/ST7789V/ST7789V/TurtleShip.tag$classTftLcdDriver.html" title=" " alt="" coords="47,5,147,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="98,46,100,81,94,80,96,51"/>
+<area shape="rect" id="Node000004" href="$classST7789V__spi__with__Brush__RGB565.html" title="SPI bus specialization of the ST7789V_with_Brush_RGB565 LCD driver." alt="" coords="5,249,189,294"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="99,215,100,250,94,248,95,219"/>
+</map>

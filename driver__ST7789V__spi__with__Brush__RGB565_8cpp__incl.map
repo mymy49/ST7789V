@@ -1,0 +1,21 @@
+<map id="driver_ST7789V_spi_with_Brush_RGB565.cpp" name="driver_ST7789V_spi_with_Brush_RGB565.cpp">
+<area shape="rect" id="Node000001" title="Implementation of the 4&#45;wire SPI bus transport for ST7789V displays." alt="" coords="100,5,287,50"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,106,78,134"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="156,53,79,100,75,96,158,48"/>
+<area shape="rect" id="Node000003" href="$ST7789V__spi__with__Brush__RGB565_8h.html" title="4&#45;wire SPI interface specialization of the ST7789V TFT LCD controller driver." alt="" coords="102,98,285,143"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="194,48,196,83,191,82,193,53"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="309,106,408,134"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="233,48,324,98,319,100,233,53"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="41,199,130,227"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="166,145,115,191,111,187,169,141"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="154,199,233,227"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="195,141,196,184,191,183,192,145"/>
+<area shape="rect" id="Node000006" href="$ST7789V__with__Brush__RGB565_8h.html" title="Direct 2D drawing bridge connecting the ST7789V LCD controller to TurtleShip&#39;s Little&#45;Endian RGB565 B..." alt="" coords="256,191,414,235"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="228,141,291,182,286,183,227,146"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="120,283,361,311"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="312,234,268,275,265,271,308,237"/>
+<area shape="rect" id="Node000008" href="$ST7789V_8h.html" title="Base controller driver for the Sitronix ST7789V 240x320 single&#45;chip TFT LCD controller." alt="" coords="385,283,474,311"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="360,233,405,273,400,273,359,238"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="340,359,519,387"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="431,310,432,345,427,342,428,313"/>
+</map>

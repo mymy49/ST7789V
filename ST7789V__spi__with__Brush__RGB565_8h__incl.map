@@ -1,0 +1,15 @@
+<map id="ST7789V_spi_with_Brush_RGB565.h" name="ST7789V_spi_with_Brush_RGB565.h">
+<area shape="rect" id="Node000001" title="4&#45;wire SPI interface specialization of the ST7789V TFT LCD controller driver." alt="" coords="66,5,249,50"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,106,94,134"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="131,53,79,98,75,95,133,48"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="118,106,197,134"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="158,48,160,92,155,90,157,53"/>
+<area shape="rect" id="Node000004" href="$ST7789V__with__Brush__RGB565_8h.html" title="Direct 2D drawing bridge connecting the ST7789V LCD controller to TurtleShip&#39;s Little&#45;Endian RGB565 B..." alt="" coords="220,98,378,143"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="191,48,255,89,250,90,191,53"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="84,191,325,218"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="276,142,232,182,229,178,272,144"/>
+<area shape="rect" id="Node000006" href="$ST7789V_8h.html" title="Base controller driver for the Sitronix ST7789V 240x320 single&#45;chip TFT LCD controller." alt="" coords="349,191,438,218"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="324,141,369,180,364,180,323,146"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="304,266,483,294"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="395,217,396,252,391,249,392,221"/>
+</map>

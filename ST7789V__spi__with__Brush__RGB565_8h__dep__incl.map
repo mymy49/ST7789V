@@ -1,0 +1,5 @@
+<map id="ST7789V_spi_with_Brush_RGB565.h" name="ST7789V_spi_with_Brush_RGB565.h">
+<area shape="rect" id="Node000001" title="4&#45;wire SPI interface specialization of the ST7789V TFT LCD controller driver." alt="" coords="7,5,190,50"/>
+<area shape="rect" id="Node000002" href="$driver__ST7789V__spi__with__Brush__RGB565_8cpp.html" title="Implementation of the 4&#45;wire SPI bus transport for ST7789V displays." alt="" coords="5,98,192,143"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="100,64,101,99,96,97,97,68"/>
+</map>

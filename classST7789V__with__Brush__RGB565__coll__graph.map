@@ -1,0 +1,26 @@
+<map id="ST7789V_with_Brush_RGB565" name="ST7789V_with_Brush_RGB565">
+<area shape="rect" id="Node000001" title="Hardware&#45;accelerated 2D drawing canvas bridge for ST7789V displays in Little&#45;Endian RGB565 format." alt="" coords="80,586,237,630"/>
+<area shape="rect" id="Node000002" href="$classST7789V.html" title="Base hardware driver class for the Sitronix ST7789V TFT LCD controller." alt="" coords="48,509,127,536"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="109,546,142,585,137,585,107,551"/>
+<area shape="rect" id="Node000003" href="/home/runner/work/ST7789V/ST7789V/TurtleShip.tag$classTftLcdDriver.html" title=" " alt="" coords="5,363,106,391"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="63,404,87,508,82,508,60,409"/>
+<area shape="rect" id="Node000004" href="/home/runner/work/ST7789V/ST7789V/TurtleShip.tag$classBrushTftLcdRgb565LE.html" title=" " alt="" coords="167,509,328,536"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="225,546,183,587,180,583,220,548"/>
+<area shape="rect" id="Node000005" href="/home/runner/work/ST7789V/ST7789V/TurtleShip.tag$classBrushTftLcdRgb565.html" title=" " alt="" coords="84,235,230,262"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="156,275,160,331,171,390,186,425,204,457,239,508,234,508,200,460,181,427,166,392,155,331,155,281"/>
+<area shape="rect" id="Node000006" href="/home/runner/work/ST7789V/ST7789V/TurtleShip.tag$classBrush.html" title=" " alt="" coords="146,106,205,134"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="172,147,161,235,156,233,171,152"/>
+<area shape="rect" id="Node000012" href="/home/runner/work/ST7789V/ST7789V/TurtleShip.tag$classFrameBuffer.html" title=" " alt="" coords="200,183,301,211"/>
+<area shape="poly" id="edge12_Node000012_Node000006" title=" " alt="" coords="199,142,240,182,235,183,199,147"/>
+<area shape="rect" id="Node000007" href="/home/runner/work/ST7789V/ST7789V/TurtleShip.tag$classFont.html" title=" " alt="" coords="151,5,200,33"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="176,46,178,106,173,105,175,51"/>
+<area shape="rect" id="Node000008" href="/home/runner/work/ST7789V/ST7789V/TurtleShip.tag$classColorRgb565LE.html" title=" " alt="" coords="370,363,490,391"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="406,400,304,487,269,510,267,506,301,483,402,403"/>
+<area shape="rect" id="Node000009" href="/home/runner/work/ST7789V/ST7789V/TurtleShip.tag$classColor.html" title=" " alt="" coords="402,286,458,314"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="432,327,433,364,428,362,429,332"/>
+<area shape="rect" id="Node000010" href="/home/runner/work/ST7789V/ST7789V/TurtleShip.tag$classFrameBufferRgb565LE.html" title=" " alt="" coords="181,363,346,391"/>
+<area shape="poly" id="edge9_Node000004_Node000010" title=" " alt="" coords="262,405,251,509,247,507,258,409"/>
+<area shape="rect" id="Node000011" href="/home/runner/work/ST7789V/ST7789V/TurtleShip.tag$classFrameBufferRgb565.html" title=" " alt="" coords="183,286,333,314"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="261,327,265,364,260,362,259,332"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="253,224,260,287,255,285,252,229"/>
+</map>
