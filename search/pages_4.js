@@ -1,7 +1,4 @@
 var searchData=
 [
-  ['in_20application_0',['Example Usage in Application',['../classST7789V__with__Brush__RGB565.html#autotoc_md3',1,'']]],
-  ['in_20board_20initialization_1',['Example Usage in Board Initialization',['../classST7789V__spi__with__Brush__RGB565.html#autotoc_md2',1,'']]],
-  ['in_20derived_20driver_2',['Example Usage in Derived Driver',['../classST7789V.html#autotoc_md1',1,'']]],
-  ['initialization_3',['Example Usage in Board Initialization',['../classST7789V__spi__with__Brush__RGB565.html#autotoc_md2',1,'']]]
+  ['5_20documentation_20references_0',['5. Documentation &amp;amp; References',['../index.html#autotoc_md18',1,'']]]
 ];

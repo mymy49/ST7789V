@@ -25,6 +25,24 @@
 var NAVTREE =
 [
   [ "ST7789V", "index.html", [
+    [ "1. Overview &amp; Key Features", "index.html#autotoc_md2", [
+      [ "Key Highlights", "index.html#autotoc_md3", null ]
+    ] ],
+    [ "2. System Specifications &amp; Hardware Environment", "index.html#autotoc_md5", [
+      [ "Supported Targets &amp; Tools", "index.html#autotoc_md6", null ],
+      [ "Pin Map &amp; Hardware Connections", "index.html#autotoc_md7", null ]
+    ] ],
+    [ "3. Installation &amp; Project Setup", "index.html#autotoc_md9", [
+      [ "Cloning with Submodules", "index.html#autotoc_md10", null ],
+      [ "Prerequisites: Nuvoton M251 Support Package for CrossWorks for ARM", "index.html#autotoc_md11", null ],
+      [ "Build and Firmware Flashing", "index.html#autotoc_md12", null ]
+    ] ],
+    [ "4. Quick Start &amp; Example Code", "index.html#autotoc_md14", [
+      [ "1. Hardware Initialization (<span class=\"tt\">bsp.cpp</span>)", "index.html#autotoc_md15", null ],
+      [ "2. Direct 2D Drawing onto the Display Surface", "index.html#autotoc_md16", null ]
+    ] ],
+    [ "5. Documentation &amp; References", "index.html#autotoc_md18", null ],
+    [ "6. License &amp; Author", "index.html#autotoc_md20", null ],
     [ "Todo List", "todo.html", null ],
     [ "Bug List", "bug.html", null ],
     [ "Deprecated List", "deprecated.html", null ],

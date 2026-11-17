@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['width_0',['width',['https://mymy49.github.io/TurtleShip/structSize__t.html#a24c15ff410fb66ba04b43eb03cd240ec',1,'Size_t::width'],['https://mymy49.github.io/TurtleShip/structbitmap__t.html#a2ca4c29e29f2fa3fd76aa1969bcf07eb',1,'bitmap_t::width'],['https://mymy49.github.io/TurtleShip/structBitmap__t.html#a9688c3a33a1965239f1d02bf390cfebe',1,'Bitmap_t::width'],['https://mymy49.github.io/TurtleShip/structFont_1_1fontInfo__t.html#a0bbbea00ce265b9983ad67f029d553d2',1,'Font::fontInfo_t::width']]],
-  ['wrcace_1',['WRCACE',['../classST7789V.html#a22940be0c423b5840f41e8b5835b3389ab2790bb13968b4620028930d85858da6',1,'ST7789V']]],
-  ['write_5fctrl_5fdisplay_2',['WRITE_CTRL_DISPLAY',['../classST7789V.html#a22940be0c423b5840f41e8b5835b3389a5c92ccb46df53a32cdaf86241e185895',1,'ST7789V']]],
-  ['write_5fdisplay_5fbrightness_3',['WRITE_DISPLAY_BRIGHTNESS',['../classST7789V.html#a22940be0c423b5840f41e8b5835b3389a07bcdc91c57aee71d69bf6bf92622710',1,'ST7789V']]],
-  ['write_5fmemory_5fcontinue_4',['WRITE_MEMORY_CONTINUE',['../classST7789V.html#a22940be0c423b5840f41e8b5835b3389ae79f21ffe3697b2b8e6f0e12a07ad307',1,'ST7789V']]],
-  ['write_5fmin_5fcab_5flevel_5',['WRITE_MIN_CAB_LEVEL',['../classST7789V.html#a22940be0c423b5840f41e8b5835b3389a52d59eb58eb7d20088c6db726234fb85',1,'ST7789V']]]
+  ['object_0',['Object',['https://mymy49.github.io/TurtleShip/classObject.html',1,'Object'],['https://mymy49.github.io/TurtleShip/classObject.html#a99247dee536d27f43ee7b3f7d8587a3c',1,'Object::Object()']]],
+  ['object_2eh_1',['Object.h',['https://mymy49.github.io/TurtleShip/Object_8h.html',1,'']]],
+  ['onto_20the_20display_20surface_2',['2. Direct 2D Drawing onto the Display Surface',['../index.html#autotoc_md16',1,'']]],
+  ['operator_3d_3',['operator=',['https://mymy49.github.io/TurtleShip/classColor.html#a73eab20534afc330072ce5210f615ac7',1,'Color']]],
+  ['outputframebuffer_4',['OutputFrameBuffer',['https://mymy49.github.io/TurtleShip/classOutputFrameBuffer.html',1,'OutputFrameBuffer'],['https://mymy49.github.io/TurtleShip/classOutputFrameBuffer.html#a28cd01066739d4cac2523d58db148d81',1,'OutputFrameBuffer::OutputFrameBuffer()']]],
+  ['overview_20key_20features_5',['1. Overview &amp;amp; Key Features',['../index.html#autotoc_md2',1,'']]]
 ];

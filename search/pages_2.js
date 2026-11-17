@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['deprecated_20list_0',['Deprecated List',['../deprecated.html',1,'']]],
-  ['derived_20driver_1',['Example Usage in Derived Driver',['../classST7789V.html#autotoc_md1',1,'']]],
-  ['driver_2',['Example Usage in Derived Driver',['../classST7789V.html#autotoc_md1',1,'']]]
+  ['3_20installation_20project_20setup_0',['3. Installation &amp;amp; Project Setup',['../index.html#autotoc_md9',1,'']]]
 ];
