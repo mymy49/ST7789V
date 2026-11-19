@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['onto_20the_20display_20surface_0',['2. Direct 2D Drawing onto the Display Surface',['../index.html#autotoc_md16',1,'']]],
-  ['overview_20key_20features_1',['1. Overview &amp;amp; Key Features',['../index.html#autotoc_md2',1,'']]]
+  ['pin_20map_20hardware_20connections_20example_0',['Pin Map &amp;amp; Hardware Connections (Example)',['../index.html#autotoc_md7',1,'']]],
+  ['project_20setup_1',['3. Installation &amp;amp; Project Setup',['../index.html#autotoc_md9',1,'']]]
 ];

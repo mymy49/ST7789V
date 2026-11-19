@@ -1,7 +1,9 @@
 var searchData=
 [
-  ['and_20firmware_20flashing_0',['Build and Firmware Flashing',['../index.html#autotoc_md12',1,'']]],
-  ['application_1',['Example Usage in Application',['../classST7789V__with__Brush__RGB565.html#autotoc_md23',1,'']]],
-  ['arm_2',['Prerequisites: Nuvoton M251 Support Package for CrossWorks for ARM',['../index.html#autotoc_md11',1,'']]],
-  ['author_3',['6. License &amp;amp; Author',['../index.html#autotoc_md20',1,'']]]
+  ['a_20submodule_0',['Adding ST7789V as a Submodule',['../index.html#autotoc_md10',1,'']]],
+  ['adding_20st7789v_20as_20a_20submodule_1',['Adding ST7789V as a Submodule',['../index.html#autotoc_md10',1,'']]],
+  ['and_20integration_2',['Build and Integration',['../index.html#autotoc_md11',1,'']]],
+  ['application_3',['Example Usage in Application',['../classST7789V__with__Brush__RGB565.html#autotoc_md22',1,'']]],
+  ['as_20a_20submodule_4',['Adding ST7789V as a Submodule',['../index.html#autotoc_md10',1,'']]],
+  ['author_5',['6. License &amp;amp; Author',['../index.html#autotoc_md19',1,'']]]
 ];

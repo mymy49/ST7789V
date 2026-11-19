@@ -5,7 +5,7 @@ var searchData=
   ['tearing_5feffect_5fline_5fon_2',['TEARING_EFFECT_LINE_ON',['../classST7789V.html#a22940be0c423b5840f41e8b5835b3389ac12ab899bf0f485cda905bb4fe00b82b',1,'ST7789V']]],
   ['tftlcddriver_3',['TftLcdDriver',['https://mymy49.github.io/TurtleShip/classTftLcdDriver.html',1,'']]],
   ['tftlcddriver_2eh_4',['TftLcdDriver.h',['https://mymy49.github.io/TurtleShip/TftLcdDriver_8h.html',1,'']]],
-  ['the_20display_20surface_5',['2. Direct 2D Drawing onto the Display Surface',['../index.html#autotoc_md16',1,'']]],
+  ['the_20display_20surface_5',['2. Direct 2D Drawing onto the Display Surface',['../index.html#autotoc_md15',1,'']]],
   ['todo_20list_6',['Todo List',['../todo.html',1,'']]],
   ['tools_7',['Supported Targets &amp;amp; Tools',['../index.html#autotoc_md6',1,'']]],
   ['touch_8',['touch',['https://mymy49.github.io/TurtleShip/classObject.html#a6ee516afb534b633aea0205cdad331e0',1,'Object']]],

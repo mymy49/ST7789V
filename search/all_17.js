@@ -17,6 +17,6 @@ var searchData=
   ['read_5fmemory_5fcontinue_14',['READ_MEMORY_CONTINUE',['../classST7789V.html#a22940be0c423b5840f41e8b5835b3389ab58b90ad6bb70d6df091ccd191eeb54d',1,'ST7789V']]],
   ['read_5fmin_5fcab_5flevel_15',['READ_MIN_CAB_LEVEL',['../classST7789V.html#a22940be0c423b5840f41e8b5835b3389afbda7cc11138af9f68ba37660ec02da5',1,'ST7789V']]],
   ['readme_2emd_16',['README.md',['../README_8md.html',1,'']]],
-  ['references_17',['5. Documentation &amp;amp; References',['../index.html#autotoc_md18',1,'']]],
+  ['references_17',['5. Documentation &amp;amp; References',['../index.html#autotoc_md17',1,'']]],
   ['reset_18',['reset',['../structST7789V__spi__with__Brush__RGB565_1_1config__t.html#a8c6da2f46d351fcdc473de6ccce873c6',1,'ST7789V_spi_with_Brush_RGB565::config_t::reset'],['../classST7789V__spi__with__Brush__RGB565.html#a08ef91150f0e2cbc7bbefa4db6b09e45',1,'ST7789V_spi_with_Brush_RGB565::reset()']]]
 ];

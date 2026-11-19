@@ -387,7 +387,7 @@ Additional Inherited Members</h2></td></tr>
 <li><b>Hardware Reset (<span class="tt"><a class="el" href="#a08ef91150f0e2cbc7bbefa4db6b09e45" title="Performs a hardware reset pulse via the reset GPIO pin.">reset</a></span>)</b>: Optional GPIO reset pin pulsing.</li>
 </ul>
 <p>It overrides pure virtual communication routines (<span class="tt"><a class="el" href="#a872c4b76fc1d072a2a392b2ce8612835" title="Transmits a single command byte over SPI with DC driven low.">sendReg()</a></span>, <span class="tt"><a class="el" href="#acd730c6b85f87530f953f6c1d595c2cd" title="Streams 16-bit RGB565 pixel buffer over SPI with DC driven high.">sendData()</a></span>, <span class="tt"><a class="el" href="#a4cd77e753231f16cadd64ae61067aab5" title="Locks SPI peripheral and applies 8-bit command or 16-bit data bus transfer specification.">enable()</a></span>, <span class="tt"><a class="el" href="#a7b359b4484f1fc5cc3a81852b8e1af5b" title="Releases mutex lock on SPI peripheral.">disable()</a></span>) and leaves <span class="tt"><a class="el" href="#a47bad7db4f33927d06d953ce8a55bfa4" title="Initializes the LCD panel hardware and controller register sequence.">initialize()</a></span> as pure virtual for panel-specific initialization sequences (e.g. gamma and power curves) implemented in board drivers such as <span class="tt">Touch_LCD_Shield_for_Arduino_2_8_inch</span>.</p>
-<h3 class="doxsection"><a class="anchor" id="autotoc_md22"></a>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md21"></a>
 Example Usage in Board Initialization</h3>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;2.8inch_TFT_Touch_Shield_Rev2.1/Touch_LCD_Shield_for_Arduino_2_8_inch.h&gt;</span></div>
 <div class="line"> </div>
