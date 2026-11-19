@@ -48,6 +48,7 @@ static const Spi::specification_t gDataSpec =
  */
 ST7789V_spi_with_Brush_RGB565::ST7789V_spi_with_Brush_RGB565(void)
 {
+	// Assign default 15 MHz Mode 0 SPI profiles for register and pixel transfers
 	mRegSpec = &gRegSpec;
 	mDataSpec = &gDataSpec;
 }
@@ -61,12 +62,14 @@ ST7789V_spi_with_Brush_RGB565::ST7789V_spi_with_Brush_RGB565(void)
  */
 void ST7789V_spi_with_Brush_RGB565::setConfig(const config_t &config)
 {
+	// Store SPI instance and control pin descriptors
 	mSpi = &config.spi;
 
 	mRstPin = config.reset;
 	mCsPin = config.chipSelect;
 	mDcPin = config.dataCommand;
 
+	// Drive active-low Chip Select pin HIGH (idle state)
 	mCsPin.port->setOutput(mCsPin.pin, true);
 }
 
@@ -79,6 +82,7 @@ void ST7789V_spi_with_Brush_RGB565::setConfig(const config_t &config)
  */
 void ST7789V_spi_with_Brush_RGB565::setSpiSpecification(const Spi::specification_t &regSpec, const Spi::specification_t &dataSpec)
 {
+	// Update pointers to command and pixel data SPI specifications
 	mRegSpec = &regSpec;
 	mDataSpec = &dataSpec;
 }
@@ -97,6 +101,7 @@ void ST7789V_spi_with_Brush_RGB565::reset(void)
 {
 	if(mRstPin.port)
 	{
+		// Assert active-low hardware reset for 100 ms, then release and wait 100 ms
 		mRstPin.port->setOutput(mRstPin.pin, false);
 		thread::delay(100);
 		mRstPin.port->setOutput(mRstPin.pin, true);
@@ -116,6 +121,7 @@ void ST7789V_spi_with_Brush_RGB565::reset(void)
  */
 void ST7789V_spi_with_Brush_RGB565::sendReg(cmd_t cmd)
 {
+	// Select command mode (DC = LOW), assert CS = LOW, send command byte, and release CS = HIGH
 	mDcPin.port->setOutput(mDcPin.pin, false);
 	mCsPin.port->setOutput(mCsPin.pin, false);
 	mSpi->send(cmd);
@@ -133,6 +139,7 @@ void ST7789V_spi_with_Brush_RGB565::sendReg(cmd_t cmd)
  */
 void ST7789V_spi_with_Brush_RGB565::sendReg(cmd_t cmd, uint8_t data)
 {
+	// Send command index with DC = LOW, then parameter byte with DC = HIGH
 	mDcPin.port->setOutput(mDcPin.pin, false);
 	mCsPin.port->setOutput(mCsPin.pin, false);
 	mSpi->send(cmd);
@@ -152,6 +159,7 @@ void ST7789V_spi_with_Brush_RGB565::sendReg(cmd_t cmd, uint8_t data)
  */
 void ST7789V_spi_with_Brush_RGB565::sendReg(cmd_t cmd, uint8_t *data, uint32_t count)
 {
+	// Send command index with DC = LOW, then stream parameter buffer with DC = HIGH
 	mDcPin.port->setOutput(mDcPin.pin, false);
 	mCsPin.port->setOutput(mCsPin.pin, false);
 	mSpi->send(cmd);
@@ -172,6 +180,7 @@ void ST7789V_spi_with_Brush_RGB565::sendReg(cmd_t cmd, uint8_t *data, uint32_t c
  */
 void ST7789V_spi_with_Brush_RGB565::sendData(uint16_t *data, uint32_t count)
 {
+	// Stream 16-bit RGB565 pixel array in data mode (DC = HIGH)
 	mDcPin.port->setOutput(mDcPin.pin, true);
 	mCsPin.port->setOutput(mCsPin.pin, false);
 	mSpi->send(data, count);
@@ -188,6 +197,7 @@ void ST7789V_spi_with_Brush_RGB565::sendData(uint16_t *data, uint32_t count)
  */
 void ST7789V_spi_with_Brush_RGB565::enable(type_t type)
 {
+	// Acquire SPI bus mutex and apply either 16-bit pixel or 8-bit register transfer profile
 	mSpi->lock();
 	if(type == TYPE_DATA)
 		mSpi->setSpecification(*mDataSpec);
@@ -203,6 +213,7 @@ void ST7789V_spi_with_Brush_RGB565::enable(type_t type)
  */
 void ST7789V_spi_with_Brush_RGB565::disable(void)
 {
+	// Release SPI bus mutex
 	mSpi->unlock();
 }
 

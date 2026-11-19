@@ -52,11 +52,13 @@ void ST7789V_with_Brush_RGB565::drawDot(int16_t x, int16_t y)
 {
 	uint16_t code = mBrushColor.getCode();
 
+	// Configure 1x1 active window at (x, y) and issue RAMWR (0x2C) command
 	enable(TYPE_REG);
 	setWindow(x, y);
 	sendReg(MEMORY_WRITE);
 	disable();
 
+	// Stream the 16-bit RGB565 pixel word into GRAM
 	enable(TYPE_DATA);
 	sendData(&code, 1);
 	disable();
@@ -86,12 +88,14 @@ void ST7789V_with_Brush_RGB565::blendDot(int16_t x, int16_t y, uint8_t alpha)
  */
 void ST7789V_with_Brush_RGB565::fillRectBase(int16_t x, int16_t y, uint16_t width, uint16_t height, Color color)
 {
+	// Abort if no working scratchpad framebuffer is bound
 	if(mFb == nullptr)
 		return;
 
 	uint32_t maxPixelCount = mFb->getMaxPixelCount();
 	uint16_t fwidth, fheight;
 
+	// Compute the maximum vertical chunk height that fits in the scratchpad framebuffer
 	fwidth = width;
 	fheight = maxPixelCount / fwidth;
 	if(mFb->setSize(fwidth, fheight) == false)
@@ -103,14 +107,17 @@ void ST7789V_with_Brush_RGB565::fillRectBase(int16_t x, int16_t y, uint16_t widt
 	loop = height / fheight;
 	remain = height % fheight;
 
+	// Pre-fill scratchpad buffer with the target solid color
 	mFb->setBrushColor(color);
 	mFb->fill();
 
+	// Configure GRAM address window for the full target rectangle
 	enable(TYPE_REG);
 	setWindow(x, y, width, height);
 	sendReg(MEMORY_WRITE);
 	disable();
 
+	// Stream full-chunk bursts and any trailing scanlines over the data bus
 	enable(TYPE_DATA);
 	for(uint32_t i=0;i<loop;i++)
 	{
@@ -136,13 +143,16 @@ void ST7789V_with_Brush_RGB565::fillDotArray(uint32_t offset, uint32_t count, Co
 	if(mFb == nullptr)
 		return;
 	
+	// Convert linear byte offset (2 bytes/pixel) to 2D (x, y) canvas coordinates
 	uint16_t width = getLcdSize().getWidth(), height = getLcdSize().getHeight();
 	int16_t y = (offset >> 1) / width, x = (offset - width * 2 * y) >> 1;
 	
+	// Fill a 1-row span of length `count` in the scratchpad framebuffer
 	mFb->setSize(count, 1);
 	mFb->setBrushColor(color);
 	mFb->fill();
 
+	// Set horizontal span window and stream the pixel run to GRAM
 	enable(TYPE_REG);
 	setWindow(x, y, count, 1);
 	sendReg(MEMORY_WRITE);

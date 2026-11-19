@@ -59,6 +59,8 @@ class ST7789V_with_Brush_RGB565 : public ST7789V, public BrushTftLcdRgb565LE
 public:
 	/**
 	 * @brief Constructs an `ST7789V_with_Brush_RGB565` drawing surface instance.
+	 * @param[in] none
+	 * @return none
 	 * @author Yoon-Ki Hong
 	 * @date 2015
 	 * @warning None.
@@ -74,6 +76,7 @@ public:
 	 * @brief Draws a single pixel dot directly onto the LCD surface at `(x, y)` using the active brush color.
 	 * @param[in] x Horizontal pixel coordinate on the display canvas.
 	 * @param[in] y Vertical pixel coordinate on the display canvas.
+	 * @return none
 	 * @author Yoon-Ki Hong
 	 * @date 2015
 	 * @warning Bypasses buffering; sends command and data directly over the bus.
@@ -89,6 +92,7 @@ public:
 	 * @param[in] x     Horizontal pixel coordinate.
 	 * @param[in] y     Vertical pixel coordinate.
 	 * @param[in] alpha Transparency weight (0 to 255).
+	 * @return none
 	 * @author Yoon-Ki Hong
 	 * @date 2015
 	 * @warning Hardware read-modify-write is not supported over write-only SPI; method is a no-op.
@@ -101,6 +105,8 @@ public:
 
 	/**
 	 * @brief Updates logical canvas width and height when display orientation or resolution changes.
+	 * @param[in] none
+	 * @return none
 	 * @author Yoon-Ki Hong
 	 * @date 2015
 	 * @warning Overrides `ST7789V::updateLcdSize()`.
@@ -118,6 +124,7 @@ public:
 	 * @param[in] width  Width of the rectangle in pixels.
 	 * @param[in] height Height of the rectangle in pixels.
 	 * @param[in] color  Solid fill `Color`.
+	 * @return none
 	 * @author Yoon-Ki Hong
 	 * @date 2015
 	 * @warning Requires working frame buffer (`mFb`) to be attached via `setFrameBuffer()`.
@@ -134,6 +141,7 @@ protected :
 	 * @param[in] offset Linear byte offset within the display coordinate space.
 	 * @param[in] count  Number of consecutive pixels to fill.
 	 * @param[in] color  Solid fill `Color`.
+	 * @return none
 	 * @author Yoon-Ki Hong
 	 * @date 2015
 	 * @warning Requires working frame buffer (`mFb`) to be attached via `setFrameBuffer()`.
@@ -150,6 +158,7 @@ protected :
 	 * @param[in] targetCanvasArea Destination clipping area on the canvas.
 	 * @param[in] bitmapPos        Placement coordinates of the bitmap.
 	 * @param[in] bitmap           Bitmap descriptor containing format, dimensions, and pixel array.
+	 * @return none
 	 * @author Yoon-Ki Hong
 	 * @date 2015
 	 * @warning Overrides `Brush::drawBitmapBase()`.
@@ -164,6 +173,7 @@ protected :
 	 * @brief Draws a full unclipped bitmap image at the specified canvas position.
 	 * @param[in] pos    Top-left coordinate on the canvas where the bitmap will be drawn.
 	 * @param[in] bitmap Bitmap descriptor (`bitmap_t`) containing pixel data and dimensions.
+	 * @return none
 	 * @author Yoon-Ki Hong
 	 * @date 2015
 	 * @warning Overrides `Brush::drawBitmapBase()`.
@@ -181,6 +191,7 @@ private :
 	 * @param[in] targetCanvasArea Destination clipping area on the canvas.
 	 * @param[in] bitmapPos        Placement coordinates of the bitmap.
 	 * @param[in] bitmap           Bitmap descriptor (`BITMAP_TYPE_RGB565`).
+	 * @return none
 	 * @author Yoon-Ki Hong
 	 * @date 2015
 	 * @warning None.
@@ -197,6 +208,7 @@ private :
 	 * @param[in] targetCanvasArea Destination clipping area on the canvas.
 	 * @param[in] bitmapPos        Placement coordinates of the bitmap.
 	 * @param[in] bitmap           Bitmap descriptor (`BITMAP_TYPE_ARGB1555`).
+	 * @return none
 	 * @author Yoon-Ki Hong
 	 * @date 2015
 	 * @warning None.

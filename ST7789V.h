@@ -60,6 +60,8 @@ class ST7789V : public TftLcdDriver
 public:
 	/**
 	 * @brief Constructs an `ST7789V` controller instance with default portrait orientation (`mRotateFlag = false`).
+	 * @param[in] none
+	 * @return none
 	 * @author Yoon-Ki Hong
 	 * @date 2015
 	 * @warning None.
@@ -75,6 +77,7 @@ public:
 	 * @param[in] xMirror Horizontal mirror mode flag (true: flip X, false: normal X).
 	 * @param[in] yMirror Vertical mirror mode flag (true: flip Y, false: normal Y).
 	 * @param[in] rotate  Screen rotation flag (true: landscape / 90 degree rotation, false: portrait).
+	 * @return none
 	 * @author Yoon-Ki Hong
 	 * @date 2015
 	 * @warning This function transmits MADCTL command to the controller; bus interface must be active.
@@ -186,6 +189,7 @@ protected:
 	 * @param[in] y      Starting vertical pixel coordinate (page/row).
 	 * @param[in] width  Width of the active window in pixels (default: 1).
 	 * @param[in] height Height of the active window in pixels (default: 1).
+	 * @return none
 	 * @author Yoon-Ki Hong
 	 * @date 2015
 	 * @warning Must be called while bus is enabled for register commands (`TYPE_REG`).
@@ -199,6 +203,7 @@ protected:
 	/**
 	 * @brief Sets the active pixel window on the ST7789V display memory using an `Area` descriptor.
 	 * @param[in] rect Drawing area containing top-left coordinate and dimensions.
+	 * @return none
 	 * @author Yoon-Ki Hong
 	 * @date 2015
 	 * @warning Must be called while bus is enabled for register commands (`TYPE_REG`).
@@ -212,6 +217,7 @@ protected:
 	/**
 	 * @brief Enables and prepares the physical interface bus for register or data transmission.
 	 * @param[in] type Bus transmission type (`TYPE_REG` for commands, `TYPE_DATA` for pixel stream).
+	 * @return none
 	 * @author Yoon-Ki Hong
 	 * @date 2015
 	 * @warning Must be paired with `disable()`.
@@ -224,6 +230,8 @@ protected:
 
 	/**
 	 * @brief Disables and releases the physical interface bus.
+	 * @param[in] none
+	 * @return none
 	 * @author Yoon-Ki Hong
 	 * @date 2015
 	 * @warning Must be called after every `enable()` sequence.
@@ -236,6 +244,8 @@ protected:
 
 	/**
 	 * @brief Updates logical canvas dimensions when rotation mode changes.
+	 * @param[in] none
+	 * @return none
 	 * @author Yoon-Ki Hong
 	 * @date 2015
 	 * @warning Pure virtual method to be implemented by derived drawing classes.
@@ -249,6 +259,7 @@ protected:
 	/**
 	 * @brief Sends a command byte (register address) to the ST7789V controller.
 	 * @param[in] cmd Command register enum (`cmd_t`).
+	 * @return none
 	 * @author Yoon-Ki Hong
 	 * @date 2015
 	 * @warning Interface must be enabled with `TYPE_REG`.
@@ -263,6 +274,7 @@ protected:
 	 * @brief Sends a command byte followed by an 8-bit parameter data byte.
 	 * @param[in] cmd  Command register enum (`cmd_t`).
 	 * @param[in] data Single 8-bit parameter byte.
+	 * @return none
 	 * @author Yoon-Ki Hong
 	 * @date 2015
 	 * @warning Interface must be configured appropriately.
@@ -278,6 +290,7 @@ protected:
 	 * @param[in] cmd   Command register enum (`cmd_t`).
 	 * @param[in] data  Pointer to the array of parameter bytes.
 	 * @param[in] count Number of parameter bytes to transmit.
+	 * @return none
 	 * @author Yoon-Ki Hong
 	 * @date 2015
 	 * @warning Parameter buffer must remain valid during transfer.
@@ -292,6 +305,7 @@ protected:
 	 * @brief Streams 16-bit pixel data array directly into display memory.
 	 * @param[in] data  Pointer to 16-bit RGB565 pixel buffer.
 	 * @param[in] count Number of 16-bit pixels to transfer.
+	 * @return none
 	 * @author Yoon-Ki Hong
 	 * @date 2015
 	 * @warning Window must be set beforehand with `setWindow()` and `MEMORY_WRITE`.

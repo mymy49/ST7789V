@@ -77,6 +77,8 @@ public :
 
 	/**
 	 * @brief Constructs an `ST7789V_spi_with_Brush_RGB565` instance with default 15 MHz SPI bus specifications.
+	 * @param[in] none
+	 * @return none
 	 * @author Yoon-Ki Hong
 	 * @date 2015
 	 * @warning None.
@@ -105,6 +107,7 @@ public :
 	 * @brief Overrides default SPI clock speeds and transmission modes for register and pixel data transfers.
 	 * @param[in] regSpec  SPI specification (clock mode, max frequency, 8-bit width) for commands.
 	 * @param[in] dataSpec SPI specification (clock mode, max frequency, 16-bit width) for pixel streams.
+	 * @return none
 	 * @author Yoon-Ki Hong
 	 * @date 2015
 	 * @warning Bus frequencies must not exceed the maximum ratings of both the MCU and ST7789V controller.
@@ -117,6 +120,8 @@ public :
 
 	/**
 	 * @brief Performs a hardware reset pulse via the `reset` GPIO pin.
+	 * @param[in] none
+	 * @return none
 	 * @author Yoon-Ki Hong
 	 * @date 2015
 	 * @warning Delays thread execution by 200 ms during the low-pulse and recovery period.
@@ -137,6 +142,7 @@ protected:
 	/**
 	 * @brief Caches SPI and GPIO configuration pins and drives CS high (idle).
 	 * @param[in] config Hardware connection configuration structure.
+	 * @return none
 	 * @author Yoon-Ki Hong
 	 * @date 2015
 	 * @warning None.
@@ -150,6 +156,7 @@ protected:
 	/**
 	 * @brief Transmits a single command byte over SPI with DC driven low.
 	 * @param[in] cmd Command register enum (`cmd_t`).
+	 * @return none
 	 * @author Yoon-Ki Hong
 	 * @date 2015
 	 * @warning Overrides `ST7789V::sendReg()`.
@@ -164,6 +171,7 @@ protected:
 	 * @brief Transmits a command byte with DC low, followed by an 8-bit parameter with DC high.
 	 * @param[in] cmd  Command register enum (`cmd_t`).
 	 * @param[in] data Single 8-bit parameter byte.
+	 * @return none
 	 * @author Yoon-Ki Hong
 	 * @date 2015
 	 * @warning Overrides `ST7789V::sendReg()`.
@@ -179,6 +187,7 @@ protected:
 	 * @param[in] cmd   Command register enum (`cmd_t`).
 	 * @param[in] data  Pointer to the parameter byte array.
 	 * @param[in] count Number of parameter bytes to transmit.
+	 * @return none
 	 * @author Yoon-Ki Hong
 	 * @date 2015
 	 * @warning Overrides `ST7789V::sendReg()`.
@@ -193,6 +202,7 @@ protected:
 	 * @brief Streams 16-bit RGB565 pixel buffer over SPI with DC driven high.
 	 * @param[in] data  Pointer to 16-bit pixel data array.
 	 * @param[in] count Number of 16-bit words to stream.
+	 * @return none
 	 * @author Yoon-Ki Hong
 	 * @date 2015
 	 * @warning Overrides `ST7789V::sendData()`. SPI must be configured for 16-bit mode.
@@ -206,6 +216,7 @@ protected:
 	/**
 	 * @brief Locks SPI peripheral and applies 8-bit command or 16-bit data bus transfer specification.
 	 * @param[in] type Transmission phase (`TYPE_REG` for 8-bit commands, `TYPE_DATA` for 16-bit pixels).
+	 * @return none
 	 * @author Yoon-Ki Hong
 	 * @date 2015
 	 * @warning Overrides `ST7789V::enable()`. Must be paired with `disable()`.
@@ -218,6 +229,8 @@ protected:
 
 	/**
 	 * @brief Releases mutex lock on SPI peripheral.
+	 * @param[in] none
+	 * @return none
 	 * @author Yoon-Ki Hong
 	 * @date 2015
 	 * @warning Overrides `ST7789V::disable()`.
@@ -232,6 +245,7 @@ protected:
 	 * @brief Reads a single byte response from the ST7789V controller over SPI.
 	 * @param[in]  cmd Command register to query.
 	 * @param[out] des Destination reference where received byte will be stored.
+	 * @return none
 	 * @author Yoon-Ki Hong
 	 * @date 2015
 	 * @warning Requires bidirectional SPI (MISO) or half-duplex 3-wire support.

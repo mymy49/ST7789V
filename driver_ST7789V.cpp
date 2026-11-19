@@ -23,6 +23,7 @@
  */
 ST7789V::ST7789V(void)
 {
+	// Default display orientation is portrait mode (unrotated)
 	mRotateFlag = false;
 }
 
@@ -49,23 +50,26 @@ void ST7789V::setDirection(bool xMirror, bool yMirror, bool rotate)
 
 	if(rotate)
 	{
+		// Assert MV bit (Row/Column exchange) for 90-degree landscape orientation
 		memAccCtrl[0] |= 0x20;
 
 		if(xMirror)
-			memAccCtrl[0] |= 0x80;
+			memAccCtrl[0] |= 0x80; // MY bit
 		if(yMirror)
-			memAccCtrl[0] |= 0x40;
+			memAccCtrl[0] |= 0x40; // MX bit
 	}
 	else
 	{
 		if(xMirror)
-			memAccCtrl[0] |= 0x40;
+			memAccCtrl[0] |= 0x40; // MX bit
 		if(yMirror)
-			memAccCtrl[0] |= 0x80;
+			memAccCtrl[0] |= 0x80; // MY bit
 	}
 
+	// Cache rotation state
 	mRotateFlag = rotate;
 
+	// Lock bus in register mode, update logical canvas dimensions, and transmit MADCTL command
 	enable(TYPE_REG);
 
 	updateLcdSize();
@@ -92,6 +96,7 @@ void ST7789V::setWindow(int16_t x, int16_t y, uint16_t width, uint16_t height)
 	uint8_t data[4];
 	uint16_t end;
 
+	// Pack big-endian 16-bit start and end column coordinates and write CASET (0x2A)
 	end = x + width - 1;
 	data[0] = x >> 8;
 	data[1] = x & 0xFF;
@@ -100,6 +105,7 @@ void ST7789V::setWindow(int16_t x, int16_t y, uint16_t width, uint16_t height)
 
 	sendReg(COLUMN_ADDRESS_SET, data, 4);
 	
+	// Pack big-endian 16-bit start and end row coordinates and write RASET (0x2B)
 	end = y + height - 1;
 	data[0] = y >> 8;
 	data[1] = y & 0xFF;
@@ -126,6 +132,7 @@ void ST7789V::setWindow(Area rect)
 	uint16_t width = rect.getSize().getWidth();
 	uint16_t height = rect.getSize().getHeight();
 
+	// Pack big-endian 16-bit start and end column coordinates and write CASET (0x2A)
 	end = x + width - 1;
 	data[0] = x >> 8;
 	data[1] = x & 0xFF;
@@ -134,6 +141,7 @@ void ST7789V::setWindow(Area rect)
 
 	sendReg(COLUMN_ADDRESS_SET, data, 4);
 	
+	// Pack big-endian 16-bit start and end row coordinates and write RASET (0x2B)
 	end = y + height - 1;
 	data[0] = y >> 8;
 	data[1] = y & 0xFF;
