@@ -35,65 +35,48 @@ The **ST7789V** module provides comprehensive hardware control and high-performa
 
 ### Supported Targets & Tools
 - **Target Microcontrollers & Development Boards**:
-  - Nuvoton NuMicro® M251 series (e.g., **NuMaker-M251KG** / Cortex®-M23).
   - Any 32-bit MCU supported by the **yss OS** framework.
 - **Display Shields & Modules**:
-  - Arduino UNO-compatible shields, such as the **2.8-inch TFT Touch Shield Rev2.1** (featuring ST7789V 240x320 LCD + XPT2046 touch controller).
+  - Displays driven by the Sitronix ST7789V controller (e.g., SPI or parallel TFT LCD panels).
 - **Required Software & Toolchains**:
-  - Toolchain: ARM GNU Toolchain or CrossWorks for ARM (v5.x or higher).
-    - **Note on CrossWorks for ARM**: CrossWorks for ARM does not natively support the Nuvoton M251 series. You must install the custom [CrossworksForARM_Nuvoton_M251 Support Package](https://github.com/mymy49/CrossworksForARM_Nuvoton_M251) before building M251 projects.
+  - Toolchain: CrossWorks for ARM (v5.x or higher).
   - Operating System: [yss OS](https://github.com/mymy49/yss) (embedded RTOS & HAL).
   - Graphics Engine: [TurtleShip](https://github.com/mymy49/TurtleShip) (included as submodule).
   - Language: C++11 or higher.
 
-### Pin Map & Hardware Connections
-The table below details the hardware pin configuration between the **NuMaker-M251KG** and the ST7789V controller on the 2.8-inch TFT Touch Shield Rev2.1:
+### Pin Map & Hardware Connections (Example)
+The table below illustrates an example hardware pin configuration connecting an SPI interface to the ST7789V controller:
 
-| Signal Name | ST7789V / Shield Pin | NuMaker-M251KG Pin | MCU Peripheral / Function | Description |
-| :--- | :--- | :--- | :--- | :--- |
-| **MOSI** | SDI / MOSI | `PA.0` | `Gpio::PA0_SPI0_MOSI` | SPI Master Output / Slave Input |
-| **MISO** | SDO / MISO | `PA.1` | `Gpio::PA1_SPI0_MISO` | SPI Master Input / Slave Output (Optional) |
-| **CLK** | SCK / CLK | `PA.2` | `Gpio::PA2_SPI0_CLK` | SPI Serial Clock |
-| **CS** | /CS (Active Low) | `PA.3` | GPIO Output (Active Low) | LCD Controller Chip Select |
-| **BL** | Backlight | `PA.4` | GPIO Output (Active High) | Display Backlight Control (High: ON) |
-| **DC** | D/C (RS) | `PA.6` | GPIO Output (Data/Command) | Data/Command Mode (Low: Command, High: Data) |
-| **RESET** | /RESET | `NC` | Unused (`{0, 0}`) | Hardware Reset Pin (Tied high or internal) |
+| Signal Name | ST7789V Pin | MCU Function | Description |
+| :--- | :--- | :--- | :--- |
+| **MOSI** | SDI / MOSI | SPI Master MOSI | SPI Master Output / Slave Input |
+| **MISO** | SDO / MISO | SPI Master MISO | SPI Master Input / Slave Output (Optional) |
+| **CLK** | SCK / CLK | SPI Serial Clock | SPI Serial Clock |
+| **CS** | /CS (Active Low) | GPIO Output | LCD Controller Chip Select |
+| **BL** | Backlight | GPIO Output | Display Backlight Control (High: ON) |
+| **DC** | D/C (RS) | GPIO Output | Data/Command Mode (Low: Command, High: Data) |
+| **RESET** | /RESET | GPIO / Unused | Hardware Reset Pin |
 
 ---
 
 ## 3. Installation & Project Setup
 
-### Cloning with Submodules
-To clone a project that includes this repository and its submodules recursively:
-```bash
-git clone --recursive https://github.com/mymy49/NuMaker-M251KG_example.git
-```
-
+### Adding ST7789V as a Submodule
 To add this repository as a submodule into an existing project:
 ```bash
 git submodule add --recursive https://github.com/mymy49/ST7789V.git module/ST7789V
 ```
 
-### Prerequisites: Nuvoton M251 Support Package for CrossWorks for ARM
-CrossWorks for ARM does not natively provide device support for Nuvoton NuMicro® M251 microcontrollers in its default package manager. A custom device support package must be installed beforehand:
+To clone an existing project with submodules recursively:
+```bash
+git clone --recursive <repository-url>
+```
 
-1. Clone or download the [CrossworksForARM_Nuvoton_M251](https://github.com/mymy49/CrossworksForARM_Nuvoton_M251) repository.
-2. Open the package project file (`.hzp`) in CrossWorks for ARM and build it (`F7` or `Build -> Build Project`) to generate the package file (`.hzq`).
-3. In CrossWorks for ARM, navigate to **Tools -> Packages -> Manually Install Packages...** and select the generated `.hzq` package file.
-4. Once installed, M251 target device definitions, CMSIS headers, and project templates will be fully available in CrossWorks for ARM.
-
-### Build and Firmware Flashing
-- **CrossWorks for ARM**:
-  1. Ensure the [CrossworksForARM_Nuvoton_M251](https://github.com/mymy49/CrossworksForARM_Nuvoton_M251) package has been installed.
-  2. Open the project solution file (e.g., `Example.hzp`).
-  3. Select target configuration (`Example THUMB Release` or `Example THUMB Debug`).
-  4. Build solution via `F7` or `Build -> Build Solution`.
-  5. Connect the board via Nu-Link ICE and flash with `Ctrl+D` (`Target -> Download`).
-- **Command Line (pyOCD / OpenOCD)**:
-  ```bash
-  # Flash prebuilt binary using pyocd
-  pyocd flash -t m251kg firmware.bin
-  ```
+### Build and Integration
+1. Add the ST7789V driver files and the `TurtleShip` submodule directory to your project include and build paths.
+2. Initialize **yss OS** and configure the communication peripheral (SPI, 8080 parallel, etc.) in your board support layer.
+3. Build the application using CrossWorks for ARM.
+4. Download the firmware to the target MCU using your debug probe.
 
 ---
 
