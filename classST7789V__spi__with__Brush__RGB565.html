@@ -429,6 +429,13 @@ Example Usage in Board Initialization</h3>
 </div><div class="memdoc">
 
 <p>Constructs an <span class="tt"><a class="el" href="classST7789V__spi__with__Brush__RGB565.html" title="SPI bus specialization of the ST7789V_with_Brush_RGB565 LCD driver.">ST7789V_spi_with_Brush_RGB565</a></span> instance with default 15 MHz SPI bus specifications. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
@@ -467,6 +474,13 @@ Example Usage in Board Initialization</h3>
 </div><div class="memdoc">
 
 <p>Releases mutex lock on SPI peripheral. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>Overrides <span class="tt"><a class="el" href="classST7789V.html#aaeb61421e5ec2f8af2d61424508a3945" title="Disables and releases the physical interface bus.">ST7789V::disable()</a></span>. </dd></dl>
@@ -512,6 +526,7 @@ Example Usage in Board Initialization</h3>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>Overrides <span class="tt"><a class="el" href="classST7789V.html#af714b5f55554106ed7725540aec2a15e" title="Enables and prepares the physical interface bus for register or data transmission.">ST7789V::enable()</a></span>. Must be paired with <span class="tt"><a class="el" href="#a7b359b4484f1fc5cc3a81852b8e1af5b" title="Releases mutex lock on SPI peripheral.">disable()</a></span>. </dd></dl>
@@ -603,6 +618,7 @@ Example Usage in Board Initialization</h3>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>Requires bidirectional SPI (MISO) or half-duplex 3-wire support. </dd></dl>
@@ -629,6 +645,13 @@ Example Usage in Board Initialization</h3>
 </div><div class="memdoc">
 
 <p>Performs a hardware reset pulse via the <span class="tt"><a class="el" href="#a08ef91150f0e2cbc7bbefa4db6b09e45" title="Performs a hardware reset pulse via the reset GPIO pin.">reset</a></span> GPIO pin. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>Delays thread execution by 200 ms during the low-pulse and recovery period. </dd></dl>
@@ -683,6 +706,7 @@ Example Usage in Board Initialization</h3>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>Overrides <span class="tt"><a class="el" href="classST7789V.html#af2903046151626be0cab078990012700" title="Streams 16-bit pixel data array directly into display memory.">ST7789V::sendData()</a></span>. SPI must be configured for 16-bit mode. </dd></dl>
@@ -734,6 +758,7 @@ Example Usage in Board Initialization</h3>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>Overrides <span class="tt"><a class="el" href="classST7789V.html#ae9ceb993b8e0c088f8b0ccc5eba54d0b" title="Sends a command byte (register address) to the ST7789V controller.">ST7789V::sendReg()</a></span>. </dd></dl>
@@ -796,6 +821,7 @@ Example Usage in Board Initialization</h3>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>Overrides <span class="tt"><a class="el" href="classST7789V.html#ae9ceb993b8e0c088f8b0ccc5eba54d0b" title="Sends a command byte (register address) to the ST7789V controller.">ST7789V::sendReg()</a></span>. </dd></dl>
@@ -851,6 +877,7 @@ Example Usage in Board Initialization</h3>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>Overrides <span class="tt"><a class="el" href="classST7789V.html#ae9ceb993b8e0c088f8b0ccc5eba54d0b" title="Sends a command byte (register address) to the ST7789V controller.">ST7789V::sendReg()</a></span>. </dd></dl>
@@ -901,6 +928,7 @@ Example Usage in Board Initialization</h3>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
@@ -941,6 +969,7 @@ Example Usage in Board Initialization</h3>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>Bus frequencies must not exceed the maximum ratings of both the MCU and <a class="el" href="classST7789V.html" title="Base hardware driver class for the Sitronix ST7789V TFT LCD controller.">ST7789V</a> controller. </dd></dl>

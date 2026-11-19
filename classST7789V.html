@@ -284,17 +284,17 @@ Example Usage in Derived Driver</h3>
 <div class="line">};</div>
 <div class="ttc" id="aST7789V__spi__with__Brush__RGB565_8h_html"><div class="ttname"><a href="ST7789V__spi__with__Brush__RGB565_8h.html">ST7789V_spi_with_Brush_RGB565.h</a></div><div class="ttdoc">4-wire SPI interface specialization of the ST7789V TFT LCD controller driver.</div></div>
 <div class="ttc" id="aclassST7789V__spi__with__Brush__RGB565_html"><div class="ttname"><a href="classST7789V__spi__with__Brush__RGB565.html">ST7789V_spi_with_Brush_RGB565</a></div><div class="ttdoc">SPI bus specialization of the ST7789V_with_Brush_RGB565 LCD driver.</div><div class="ttdef"><b>Definition</b> ST7789V_spi_with_Brush_RGB565.h:64</div></div>
-<div class="ttc" id="aclassST7789V__spi__with__Brush__RGB565_html_a08ef91150f0e2cbc7bbefa4db6b09e45"><div class="ttname"><a href="classST7789V__spi__with__Brush__RGB565.html#a08ef91150f0e2cbc7bbefa4db6b09e45">ST7789V_spi_with_Brush_RGB565::reset</a></div><div class="ttdeci">void reset(void)</div><div class="ttdoc">Performs a hardware reset pulse via the reset GPIO pin.</div><div class="ttdef"><b>Definition</b> driver_ST7789V_spi_with_Brush_RGB565.cpp:96</div></div>
+<div class="ttc" id="aclassST7789V__spi__with__Brush__RGB565_html_a08ef91150f0e2cbc7bbefa4db6b09e45"><div class="ttname"><a href="classST7789V__spi__with__Brush__RGB565.html#a08ef91150f0e2cbc7bbefa4db6b09e45">ST7789V_spi_with_Brush_RGB565::reset</a></div><div class="ttdeci">void reset(void)</div><div class="ttdoc">Performs a hardware reset pulse via the reset GPIO pin.</div><div class="ttdef"><b>Definition</b> driver_ST7789V_spi_with_Brush_RGB565.cpp:100</div></div>
 <div class="ttc" id="aclassST7789V__spi__with__Brush__RGB565_html_a47bad7db4f33927d06d953ce8a55bfa4"><div class="ttname"><a href="classST7789V__spi__with__Brush__RGB565.html#a47bad7db4f33927d06d953ce8a55bfa4">ST7789V_spi_with_Brush_RGB565::initialize</a></div><div class="ttdeci">virtual error_t initialize(config_t config)=0</div><div class="ttdoc">Initializes the LCD panel hardware and controller register sequence.</div></div>
-<div class="ttc" id="aclassST7789V__spi__with__Brush__RGB565_html_a4cd77e753231f16cadd64ae61067aab5"><div class="ttname"><a href="classST7789V__spi__with__Brush__RGB565.html#a4cd77e753231f16cadd64ae61067aab5">ST7789V_spi_with_Brush_RGB565::enable</a></div><div class="ttdeci">void enable(type_t type) override</div><div class="ttdoc">Locks SPI peripheral and applies 8-bit command or 16-bit data bus transfer specification.</div><div class="ttdef"><b>Definition</b> driver_ST7789V_spi_with_Brush_RGB565.cpp:189</div></div>
-<div class="ttc" id="aclassST7789V__spi__with__Brush__RGB565_html_a7b359b4484f1fc5cc3a81852b8e1af5b"><div class="ttname"><a href="classST7789V__spi__with__Brush__RGB565.html#a7b359b4484f1fc5cc3a81852b8e1af5b">ST7789V_spi_with_Brush_RGB565::disable</a></div><div class="ttdeci">void disable(void) override</div><div class="ttdoc">Releases mutex lock on SPI peripheral.</div><div class="ttdef"><b>Definition</b> driver_ST7789V_spi_with_Brush_RGB565.cpp:204</div></div>
-<div class="ttc" id="aclassST7789V__spi__with__Brush__RGB565_html_a872c4b76fc1d072a2a392b2ce8612835"><div class="ttname"><a href="classST7789V__spi__with__Brush__RGB565.html#a872c4b76fc1d072a2a392b2ce8612835">ST7789V_spi_with_Brush_RGB565::sendReg</a></div><div class="ttdeci">void sendReg(cmd_t cmd) override</div><div class="ttdoc">Transmits a single command byte over SPI with DC driven low.</div><div class="ttdef"><b>Definition</b> driver_ST7789V_spi_with_Brush_RGB565.cpp:117</div></div>
-<div class="ttc" id="aclassST7789V__spi__with__Brush__RGB565_html_aea47af04b1bec2573c1c807b8f7342c6"><div class="ttname"><a href="classST7789V__spi__with__Brush__RGB565.html#aea47af04b1bec2573c1c807b8f7342c6">ST7789V_spi_with_Brush_RGB565::setConfig</a></div><div class="ttdeci">void setConfig(const config_t &amp;config)</div><div class="ttdoc">Caches SPI and GPIO configuration pins and drives CS high (idle).</div><div class="ttdef"><b>Definition</b> driver_ST7789V_spi_with_Brush_RGB565.cpp:62</div></div>
-<div class="ttc" id="aclassST7789V_html_a1d2ff02684c2de76c54250b9cb93bfccae60cf6a208c27dc36f7706a389bf19a7"><div class="ttname"><a href="#a1d2ff02684c2de76c54250b9cb93bfccae60cf6a208c27dc36f7706a389bf19a7">ST7789V::TYPE_REG</a></div><div class="ttdeci">@ TYPE_REG</div><div class="ttdoc">Command / Register index phase.</div><div class="ttdef"><b>Definition</b> ST7789V.h:177</div></div>
-<div class="ttc" id="aclassST7789V_html_a22940be0c423b5840f41e8b5835b3389a86051b2d5815b705ef5aabaca26a07c5"><div class="ttname"><a href="#a22940be0c423b5840f41e8b5835b3389a86051b2d5815b705ef5aabaca26a07c5">ST7789V::SLPOUT</a></div><div class="ttdeci">@ SLPOUT</div><div class="ttdoc">Sleep out.</div><div class="ttdef"><b>Definition</b> ST7789V.h:105</div></div>
-<div class="ttc" id="aclassST7789V_html_a22940be0c423b5840f41e8b5835b3389ade6324d792a64378121c36d8b207880f"><div class="ttname"><a href="#a22940be0c423b5840f41e8b5835b3389ade6324d792a64378121c36d8b207880f">ST7789V::DISPON</a></div><div class="ttdeci">@ DISPON</div><div class="ttdoc">Display on.</div><div class="ttdef"><b>Definition</b> ST7789V.h:112</div></div>
-<div class="ttc" id="aclassST7789V_html_a22940be0c423b5840f41e8b5835b3389adf6c9af7e4c7610a4395b58408d6f7aa"><div class="ttname"><a href="#a22940be0c423b5840f41e8b5835b3389adf6c9af7e4c7610a4395b58408d6f7aa">ST7789V::SOFTWARE_RESET</a></div><div class="ttdeci">@ SOFTWARE_RESET</div><div class="ttdoc">Software reset.</div><div class="ttdef"><b>Definition</b> ST7789V.h:96</div></div>
-<div class="ttc" id="aclassST7789V_html_a71b9083b315b2046bac921c9f15526f3"><div class="ttname"><a href="#a71b9083b315b2046bac921c9f15526f3">ST7789V::setDirection</a></div><div class="ttdeci">void setDirection(bool xMirror, bool yMirror, bool rotate)</div><div class="ttdoc">Configures display orientation, mirroring, and rotation settings via the MADCTL register.</div><div class="ttdef"><b>Definition</b> driver_ST7789V.cpp:46</div></div>
+<div class="ttc" id="aclassST7789V__spi__with__Brush__RGB565_html_a4cd77e753231f16cadd64ae61067aab5"><div class="ttname"><a href="classST7789V__spi__with__Brush__RGB565.html#a4cd77e753231f16cadd64ae61067aab5">ST7789V_spi_with_Brush_RGB565::enable</a></div><div class="ttdeci">void enable(type_t type) override</div><div class="ttdoc">Locks SPI peripheral and applies 8-bit command or 16-bit data bus transfer specification.</div><div class="ttdef"><b>Definition</b> driver_ST7789V_spi_with_Brush_RGB565.cpp:198</div></div>
+<div class="ttc" id="aclassST7789V__spi__with__Brush__RGB565_html_a7b359b4484f1fc5cc3a81852b8e1af5b"><div class="ttname"><a href="classST7789V__spi__with__Brush__RGB565.html#a7b359b4484f1fc5cc3a81852b8e1af5b">ST7789V_spi_with_Brush_RGB565::disable</a></div><div class="ttdeci">void disable(void) override</div><div class="ttdoc">Releases mutex lock on SPI peripheral.</div><div class="ttdef"><b>Definition</b> driver_ST7789V_spi_with_Brush_RGB565.cpp:214</div></div>
+<div class="ttc" id="aclassST7789V__spi__with__Brush__RGB565_html_a872c4b76fc1d072a2a392b2ce8612835"><div class="ttname"><a href="classST7789V__spi__with__Brush__RGB565.html#a872c4b76fc1d072a2a392b2ce8612835">ST7789V_spi_with_Brush_RGB565::sendReg</a></div><div class="ttdeci">void sendReg(cmd_t cmd) override</div><div class="ttdoc">Transmits a single command byte over SPI with DC driven low.</div><div class="ttdef"><b>Definition</b> driver_ST7789V_spi_with_Brush_RGB565.cpp:122</div></div>
+<div class="ttc" id="aclassST7789V__spi__with__Brush__RGB565_html_aea47af04b1bec2573c1c807b8f7342c6"><div class="ttname"><a href="classST7789V__spi__with__Brush__RGB565.html#aea47af04b1bec2573c1c807b8f7342c6">ST7789V_spi_with_Brush_RGB565::setConfig</a></div><div class="ttdeci">void setConfig(const config_t &amp;config)</div><div class="ttdoc">Caches SPI and GPIO configuration pins and drives CS high (idle).</div><div class="ttdef"><b>Definition</b> driver_ST7789V_spi_with_Brush_RGB565.cpp:63</div></div>
+<div class="ttc" id="aclassST7789V_html_a1d2ff02684c2de76c54250b9cb93bfccae60cf6a208c27dc36f7706a389bf19a7"><div class="ttname"><a href="#a1d2ff02684c2de76c54250b9cb93bfccae60cf6a208c27dc36f7706a389bf19a7">ST7789V::TYPE_REG</a></div><div class="ttdeci">@ TYPE_REG</div><div class="ttdoc">Command / Register index phase.</div><div class="ttdef"><b>Definition</b> ST7789V.h:180</div></div>
+<div class="ttc" id="aclassST7789V_html_a22940be0c423b5840f41e8b5835b3389a86051b2d5815b705ef5aabaca26a07c5"><div class="ttname"><a href="#a22940be0c423b5840f41e8b5835b3389a86051b2d5815b705ef5aabaca26a07c5">ST7789V::SLPOUT</a></div><div class="ttdeci">@ SLPOUT</div><div class="ttdoc">Sleep out.</div><div class="ttdef"><b>Definition</b> ST7789V.h:108</div></div>
+<div class="ttc" id="aclassST7789V_html_a22940be0c423b5840f41e8b5835b3389ade6324d792a64378121c36d8b207880f"><div class="ttname"><a href="#a22940be0c423b5840f41e8b5835b3389ade6324d792a64378121c36d8b207880f">ST7789V::DISPON</a></div><div class="ttdeci">@ DISPON</div><div class="ttdoc">Display on.</div><div class="ttdef"><b>Definition</b> ST7789V.h:115</div></div>
+<div class="ttc" id="aclassST7789V_html_a22940be0c423b5840f41e8b5835b3389adf6c9af7e4c7610a4395b58408d6f7aa"><div class="ttname"><a href="#a22940be0c423b5840f41e8b5835b3389adf6c9af7e4c7610a4395b58408d6f7aa">ST7789V::SOFTWARE_RESET</a></div><div class="ttdeci">@ SOFTWARE_RESET</div><div class="ttdoc">Software reset.</div><div class="ttdef"><b>Definition</b> ST7789V.h:99</div></div>
+<div class="ttc" id="aclassST7789V_html_a71b9083b315b2046bac921c9f15526f3"><div class="ttname"><a href="#a71b9083b315b2046bac921c9f15526f3">ST7789V::setDirection</a></div><div class="ttdeci">void setDirection(bool xMirror, bool yMirror, bool rotate)</div><div class="ttdoc">Configures display orientation, mirroring, and rotation settings via the MADCTL register.</div><div class="ttdef"><b>Definition</b> driver_ST7789V.cpp:47</div></div>
 </div><!-- fragment --> </div><a name="doc-enum-members" id="doc-enum-members"></a><h2 id="header-doc-enum-members" class="groupheader">Member Enumeration Documentation</h2>
 <a id="a22940be0c423b5840f41e8b5835b3389" name="a22940be0c423b5840f41e8b5835b3389"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a22940be0c423b5840f41e8b5835b3389">&#9670;&#160;</a></span>cmd_t</h2>
@@ -517,6 +517,13 @@ Example Usage in Derived Driver</h3>
 </div><div class="memdoc">
 
 <p>Constructs an <span class="tt"><a class="el" href="classST7789V.html" title="Base hardware driver class for the Sitronix ST7789V TFT LCD controller.">ST7789V</a></span> controller instance with default portrait orientation (<span class="tt"><a class="el" href="#a9d715559269e3d55cf864ea7c8255151" title="Indicates whether landscape rotation mode (90 or 270 degrees) is active.">mRotateFlag</a> = false</span>). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>None. </dd></dl>
@@ -555,6 +562,13 @@ Example Usage in Derived Driver</h3>
 </div><div class="memdoc">
 
 <p>Disables and releases the physical interface bus. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>Must be called after every <span class="tt"><a class="el" href="#af714b5f55554106ed7725540aec2a15e" title="Enables and prepares the physical interface bus for register or data transmission.">enable()</a></span> sequence. </dd></dl>
@@ -597,6 +611,7 @@ Example Usage in Derived Driver</h3>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>Must be paired with <span class="tt"><a class="el" href="#aaeb61421e5ec2f8af2d61424508a3945" title="Disables and releases the physical interface bus.">disable()</a></span>. </dd></dl>
@@ -644,6 +659,7 @@ Example Usage in Derived Driver</h3>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>Window must be set beforehand with <span class="tt"><a class="el" href="#a2f46c14aca5d2accb36551c5a9337ab9" title="Sets the active pixel window rectangle on the ST7789V display memory.">setWindow()</a></span> and <span class="tt"><a class="el" href="#a22940be0c423b5840f41e8b5835b3389a82c289ce916dee8f0e6632e4563994b2" title="Memory write (RAMWR).">MEMORY_WRITE</a></span>. </dd></dl>
@@ -686,6 +702,7 @@ Example Usage in Derived Driver</h3>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>Interface must be enabled with <span class="tt"><a class="el" href="#a1d2ff02684c2de76c54250b9cb93bfccae60cf6a208c27dc36f7706a389bf19a7" title="Command / Register index phase.">TYPE_REG</a></span>. </dd></dl>
@@ -739,6 +756,7 @@ Example Usage in Derived Driver</h3>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>Parameter buffer must remain valid during transfer. </dd></dl>
@@ -786,6 +804,7 @@ Example Usage in Derived Driver</h3>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>Interface must be configured appropriately. </dd></dl>
@@ -831,6 +850,7 @@ Example Usage in Derived Driver</h3>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>This function transmits MADCTL command to the controller; bus interface must be active. </dd></dl>
@@ -887,6 +907,7 @@ Example Usage in Derived Driver</h3>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>Must be called while bus is enabled for register commands (<span class="tt"><a class="el" href="#a1d2ff02684c2de76c54250b9cb93bfccae60cf6a208c27dc36f7706a389bf19a7" title="Command / Register index phase.">TYPE_REG</a></span>). </dd></dl>
@@ -947,6 +968,7 @@ Example Usage in Derived Driver</h3>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>Must be called while bus is enabled for register commands (<span class="tt"><a class="el" href="#a1d2ff02684c2de76c54250b9cb93bfccae60cf6a208c27dc36f7706a389bf19a7" title="Command / Register index phase.">TYPE_REG</a></span>). </dd></dl>
@@ -988,6 +1010,13 @@ Example Usage in Derived Driver</h3>
 </div><div class="memdoc">
 
 <p>Updates logical canvas dimensions when rotation mode changes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Yoon-Ki Hong </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2015 </dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>Pure virtual method to be implemented by derived drawing classes. </dd></dl>
